@@ -7,7 +7,7 @@ const App = () => {
   const [color, setColor] = useState('black');
 
   const changeColor = (action) => {
-    console.log("dziala onClick " + action); // Fixed the syntax error here
+    console.log("dziala onClick " + action); 
 
     let newColor = "";
     if (action === "red") {
@@ -18,7 +18,7 @@ const App = () => {
       newColor = "blue";
     }
 
-    setColor(newColor); // You need to set the new color in the state
+    setColor(newColor); 
   };
 
   return (
