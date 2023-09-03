@@ -7,19 +7,23 @@ const App = () => {
   const [color, setColor] = useState('black');
 
   const changeColor = (action) => {
-    console.log("dziala onClick " + action); 
-
+    console.log("działa onClick " + action); 
+  
     let newColor = "";
+  
     if (action === "red") {
       newColor = "red";
-    } else if (action === "green") {
+    } 
+    if (action === "green") {
       newColor = "green";
-    } else {
+    }
+    if (action === "blue") { 
       newColor = "blue";
     }
-
+  
     setColor(newColor); 
   };
+  
 
   return (
     <div className="App">
